@@ -4,12 +4,13 @@ A simple boiler-plate code to get us mobbing!
 
 ## Contributors
 
-- Skúli Arnlaugsson (@arnlaugsson)
-- Pála Ögn Stefánsdóttir (@palaogn-sothebys)
-- Lúðvík Snær Hermannsson (@gv-sothebys-lulli)
 - Júlía Oddsdóttir (@gv-sothebys-julia)
+- Kristinn Júlíusson (@gv-sothebys-kristinn)
+- Lúðvík Snær Hermannsson (@gv-sothebys-lulli)
 - Matthías Sigurðsson (@gv-sothebys-matti)
-- Petra Kristín Frantz (gv-sothebys-petra)
+- Pála Ögn Stefánsdóttir (@palaogn-sothebys)
+- Petra Kristín Frantz (@gv-sothebys-petra)
+- Skúli Arnlaugsson (@arnlaugsson)
 
 ## Getting started
 
