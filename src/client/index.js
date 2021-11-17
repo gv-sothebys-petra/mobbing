@@ -28,8 +28,13 @@ function processForm(e) {
         try {
         fetch("/api/calculate/" + formula)
             .then(resp => {
-                console.log(resp)
-                return resp.json()})
+                console.log(resp);
+                if (resp.ok) {
+                    console.log('hallo');
+                    return resp.json();
+                }
+                return resp.json();
+            })
             .then(data => {
                 console.log(data); 
                 let calculated = data.calculated;
