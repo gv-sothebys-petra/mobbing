@@ -1,12 +1,11 @@
-
 const express = require("express");
 const router = express.Router();
 const calculate = require("../calculator/index");
 
 router.get("/calculate/:formula", (req, res) => {
   let val = calculate(req.params["formula"]);
-  console.log(req)
-  res.status(200).send({calculated: val})
+
+  res.status(200).send({ calculated: val });
 });
 
 router.get("/", (req, res) => {
