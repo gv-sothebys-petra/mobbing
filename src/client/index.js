@@ -16,6 +16,11 @@ function processForm(e) {
     container.innerHTML = `${formula} = ${calculated}`;
   }
 
+  function updateErrorText() {
+    let container = document.getElementById("calculated");
+    container.innerHTML = `input is not valid`;
+  }
+
   function resetCalculatedContainer() {
     let container = document.getElementById("calculated");
     container.innerHTML = "Waiting for a formula...";
@@ -25,25 +30,23 @@ function processForm(e) {
   let formula = formData.get("formula");
 
   if (formula) {
-    try {
-      fetch("/api/calculate/" + formula)
-        .then((resp) => {
-          console.log(resp);
-          if (resp.ok) {
-            console.log("hallo");
-            return resp.json();
-          }
-          return Promise.reject("Response not ok");
-        })
-        .then((data) => {
-          console.log(data);
-          let calculated = data.calculated;
-          updateCalculatedText(formula, calculated);
-        })
-        .catch((e) => console.log(e));
-    } catch (err) {
-      console.error(err);
-    }
+    fetch("/api/calculate/" + formula)
+      .then((resp) => {
+        console.log(resp);
+        if (resp.ok) {
+          console.log("hallo");
+          return resp.json();
+        }
+        return Promise.reject("input is not valid");
+      })
+      .then((data) => {
+        console.log(data);
+        let calculated = data.calculated;
+        updateCalculatedText(formula, calculated);
+      })
+      .catch((e) => {
+        updateErrorText();
+      });
   } else {
     resetCalculatedContainer();
   }
