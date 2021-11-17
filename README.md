@@ -3,7 +3,9 @@
 A simple boiler-plate code to get us mobbing!
 
 ## Contributors
+
 - Skúli Arnlaugsson (@arnlaugsson)
+- Pála Ögn Stefánsdóttir (@palaogn-sothebys)
 
 ## Getting started
 
@@ -18,9 +20,9 @@ A simple boiler-plate code to get us mobbing!
 ## Tasks
 
 1. Add error handling to the client, so the page is update when an invalid formula is entered.
-    - Example invalid input: "@tHiS w0n't work".
-    - It should update the output box saying the input is not valid.
-    - - It should make the output box red to indicate an error.
+   - Example invalid input: "@tHiS w0n't work".
+   - It should update the output box saying the input is not valid.
+   - - It should make the output box red to indicate an error.
 2. Add support for the exponatiation character "^".
 3. We've heard from our security team that our API is insecure, harden it for security measures.
 4. Improve the styling, surprise us!
@@ -33,14 +35,14 @@ A simple boiler-plate code to get us mobbing!
 2. Every team member install https://github.com/remotemobprogramming/mob and clones the forked repo to their machine
 3. Familiarize yourselves as a team with the repo.
 4. To make sure everything is set up correctly, start with the "introduction" round.
-    - With the repo cloned locally, starting with one team member, type: `mob start 1 -r`
-    - Open README.md in your favourite editor, add your name to the Contributor's list.
-    - Save the file and type `mob next`
-    - All of your changes should be saved and pushed to the new branch, and the next person can proceed until everyone has added there name.
-        - If not, you'll need to fix your SSH key,or https authentication to the repo.
-            - Have you accepted the invite to the Github project?
-            - Are you using the correct SSH key?
-    - Once the last person on the team has added their name, simply type `mob next` and you are ready to move on to the next step.
+   - With the repo cloned locally, starting with one team member, type: `mob start 1 -r`
+   - Open README.md in your favourite editor, add your name to the Contributor's list.
+   - Save the file and type `mob next`
+   - All of your changes should be saved and pushed to the new branch, and the next person can proceed until everyone has added there name.
+     - If not, you'll need to fix your SSH key,or https authentication to the repo.
+       - Have you accepted the invite to the Github project?
+       - Are you using the correct SSH key?
+   - Once the last person on the team has added their name, simply type `mob next` and you are ready to move on to the next step.
 5. The team pick a tasks and decides who will be the first driver, and decides how frequently we want to swithc drivers (5 min recommended).
 6. That person shares their screen in a video conferencing software (Teams or Google meet for a lighter experience).
 
