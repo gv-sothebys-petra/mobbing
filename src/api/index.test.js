@@ -15,3 +15,11 @@ describe("GET /api/calculate", () => {
     expect(res.body).toMatchObject({"calculated": 4});
   });
 });
+
+describe("GET /api/calculate", () => {
+  it("should return 25 with 5^2", async () => {
+    const res = await request(app).get("/api/calculate/5^2");
+    expect(res.status).toBe(200);
+    expect(res.body).toMatchObject({"calculated": 25});
+  });
+});
