@@ -1,5 +1,6 @@
 function evil(fn) {
-    return new Function('return ' + fn)();
+    console.log(fn.replaceAll("^", "**"))
+    return new Function('return ' + fn.replaceAll("^", "**"))();
 }
 
 module.exports = evil;

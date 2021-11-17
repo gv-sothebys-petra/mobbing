@@ -5,6 +5,7 @@ const calculate = require("../calculator/index");
 
 router.get("/calculate/:formula", (req, res) => {
   let val = calculate(req.params["formula"]);
+  console.log(req)
   res.status(200).send({calculated: val})
 });
 
