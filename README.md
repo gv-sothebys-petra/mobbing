@@ -22,7 +22,8 @@ A simple boiler-plate code to get us mobbing!
     - It should update the output box saying the input is not valid.
     - - It should make the output box red to indicate an error.
 2. Add support for the exponatiation character "^".
-3. Improve the styling, surprise us!
+3. We've heard from our security team that our API is insecure, harden it for security measures.
+4. Improve the styling, surprise us!
 
 ## Mobbing session
 
