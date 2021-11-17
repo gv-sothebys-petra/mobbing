@@ -9,6 +9,7 @@ A simple boiler-plate code to get us mobbing!
 - Lúðvík Snær Hermannsson (@gv-sothebys-lulli)
 - Júlía Oddsdóttir (@gv-sothebys-julia)
 - Matthías Sigurðsson (@gv-sothebys-matti)
+- Petra Kristín Frantz (gv-sothebys-petra)
 
 ## Getting started
 
