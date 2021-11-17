@@ -25,12 +25,19 @@ function processForm(e) {
     let formula = formData.get("formula");
 
     if (formula) {
+        try {
         fetch("/api/calculate/" + formula)
-            .then(resp => resp.json())
+            .then(resp => {
+                console.log(resp)
+                return resp.json()})
             .then(data => {
+                console.log(data); 
                 let calculated = data.calculated;
                 updateCalculatedText(formula, calculated);
             });
+        } catch(err) {
+            console.error(err);
+        }
     } else {
         resetCalculatedContainer();
     }
