@@ -6,6 +6,7 @@ A simple boiler-plate code to get us mobbing!
 
 - Skúli Arnlaugsson (@arnlaugsson)
 - Pála Ögn Stefánsdóttir (@palaogn-sothebys)
+- Lúðvík Snær Hermannsson   (@gv-sothebys-lulli)
 
 ## Getting started
 
